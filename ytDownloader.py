@@ -17,11 +17,9 @@ def download_video():
 def clear_link():
     link_entry.delete(0, tk.END)
 
-# Create the main window
 root = tk.Tk()
 root.title("YouTube Video Downloader")
 
-# Create and place widgets
 link_label = tk.Label(root, text="Enter YouTube Link:")
 link_label.pack()
 
@@ -34,5 +32,4 @@ download_button.pack()
 clear_button = tk.Button(root, text="Clear Link", command=clear_link)
 clear_button.pack()
 
-# Start the GUI event loop
 root.mainloop()
